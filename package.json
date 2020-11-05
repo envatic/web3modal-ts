@@ -23,7 +23,7 @@
     "walletlink",
     "web3modal-ts"
   ],
-  "author": "Minds",
+  "author": "Minds & dOrg",
   "license": "MIT",
   "scripts": {
     "copy:logos": "copyfiles -u 3 ./src/providers/logos/** ./dist/providers/logos",
