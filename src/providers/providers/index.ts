@@ -22,6 +22,8 @@ import MEWwallet from '../logos/mewwallet.png';
 import DcentWalletLogo from '../logos/dcentwallet.png';
 // @ts-ignore
 import BitskiLogo from '../logos/bitski.svg';
+// @ts-ignore
+import CoinbaseLogo from '../logos/coinbase.svg';
 
 import { IProviderInfo } from '../../helpers';
 
@@ -37,6 +39,17 @@ export const WALLETCONNECT: IProviderInfo = {
     required: [['infuraId', 'rpc']],
   },
 };
+
+export const WALLETLINK: IProviderInfo = {
+  id: 'walletlink',
+  name: 'Coinbase',
+  logo: CoinbaseLogo,
+  type: 'qrcode',
+  check: 'isWalletLink',
+  package: {
+    required: ['infuraUrl']
+  }
+}
 
 export const PORTIS: IProviderInfo = {
   id: 'portis',
