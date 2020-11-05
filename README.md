@@ -19,7 +19,7 @@ npm install --save @mindsorg/web3modal-ts
 Or
 
 ```bash
-yarn add web3modal
+yarn add @mindsorg/web3modal-ts
 ```
 
 2. Instantiate a `Web3WalletConnector` object
