@@ -142,7 +142,7 @@ const ConnectToTorus = async (Torus: any, opts: ITorusConnectorOptions) => {
       // defaults
       let buttonPosition = 'bottom-left';
       let apiKey = 'torus-default';
-      let modalZIndex = 99999;
+      let modalZIndex = 99999999;
       let network: NetworkParams = { host: 'mainnet' };
       let defaultVerifier = undefined;
 
