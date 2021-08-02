@@ -21,7 +21,7 @@ export interface IInjectedProvidersMap {
 
 export interface IProviderDisplay {
   name: string;
-  logo: string;
+  logo: URL;
   description?: string;
 }
 
@@ -55,7 +55,7 @@ export interface IProviderDisplayWithConnector extends IProviderDisplay {
 
 export interface IProviderUserOptions {
   name: string;
-  logo: string;
+  logo: URL;
   description: string;
   onClick: () => Promise<void>;
 }

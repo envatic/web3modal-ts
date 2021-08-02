@@ -1,30 +1,3 @@
-// @ts-ignore
-import WalletConnectLogo from '../logos/walletconnect-circle.svg';
-// @ts-ignore
-import PortisLogo from '../logos/portis.svg';
-// @ts-ignore
-import SquarelinkLogo from '../logos/squarelink.svg';
-// @ts-ignore
-import FortmaticLogo from '../logos/fortmatic.svg';
-// @ts-ignore
-import ArkaneLogo from '../logos/arkane.svg';
-// @ts-ignore
-import TorusLogo from '../logos/torus.svg';
-// @ts-ignore
-import AuthereumLogo from '../logos/authereum.svg';
-// @ts-ignore
-import BurnerWalletLogo from '../logos/burnerwallet.png';
-// @ts-ignore
-import UniLoginLogo from '../logos/unilogin.svg';
-// @ts-ignore
-import MEWwallet from '../logos/mewwallet.png';
-// @ts-ignore
-import DcentWalletLogo from '../logos/dcentwallet.png';
-// @ts-ignore
-import BitskiLogo from '../logos/bitski.svg';
-// @ts-ignore
-import CoinbaseLogo from '../logos/coinbase.svg';
-
 import { IProviderInfo } from '../../helpers';
 
 export * from '../injected';
@@ -32,7 +5,7 @@ export * from '../injected';
 export const WALLETCONNECT: IProviderInfo = {
   id: 'walletconnect',
   name: 'WalletConnect',
-  logo: WalletConnectLogo,
+  logo: new URL('../logos/walletconnect-circle.svg', import.meta.url),
   type: 'qrcode',
   check: 'isWalletConnect',
   package: {
@@ -43,18 +16,18 @@ export const WALLETCONNECT: IProviderInfo = {
 export const WALLETLINK: IProviderInfo = {
   id: 'walletlink',
   name: 'Coinbase',
-  logo: CoinbaseLogo,
+  logo: new URL('../logos/coinbase.svg', import.meta.url),
   type: 'qrcode',
   check: 'isWalletLink',
   package: {
-    required: ['infuraUrl']
-  }
-}
+    required: ['infuraUrl'],
+  },
+};
 
 export const PORTIS: IProviderInfo = {
   id: 'portis',
   name: 'Portis',
-  logo: PortisLogo,
+  logo: new URL('../logos/portis.svg', import.meta.url),
   type: 'web',
   check: 'isPortis',
   package: {
@@ -65,7 +38,7 @@ export const PORTIS: IProviderInfo = {
 export const FORTMATIC: IProviderInfo = {
   id: 'fortmatic',
   name: 'Fortmatic',
-  logo: FortmaticLogo,
+  logo: new URL('../logos/fortmatic.svg', import.meta.url),
   type: 'web',
   check: 'isFortmatic',
   package: {
@@ -76,7 +49,7 @@ export const FORTMATIC: IProviderInfo = {
 export const SQUARELINK: IProviderInfo = {
   id: 'squarelink',
   name: 'Squarelink',
-  logo: SquarelinkLogo,
+  logo: new URL('../logos/squarelink.svg', import.meta.url),
   type: 'web',
   check: 'isSquarelink',
   package: {
@@ -87,7 +60,7 @@ export const SQUARELINK: IProviderInfo = {
 export const TORUS: IProviderInfo = {
   id: 'torus',
   name: 'Torus',
-  logo: TorusLogo,
+  logo: new URL('../logos/torus.svg', import.meta.url),
   type: 'web',
   check: 'isTorus',
 };
@@ -95,7 +68,7 @@ export const TORUS: IProviderInfo = {
 export const ARKANE: IProviderInfo = {
   id: 'arkane',
   name: 'Arkane',
-  logo: ArkaneLogo,
+  logo: new URL('../logos/arkane.svg', import.meta.url),
   type: 'web',
   check: 'isArkane',
   package: {
@@ -106,7 +79,7 @@ export const ARKANE: IProviderInfo = {
 export const AUTHEREUM: IProviderInfo = {
   id: 'authereum',
   name: 'Authereum',
-  logo: AuthereumLogo,
+  logo: new URL('../logos/authereum.svg', import.meta.url),
   type: 'web',
   check: 'isAuthereum',
 };
@@ -114,7 +87,7 @@ export const AUTHEREUM: IProviderInfo = {
 export const BURNERCONNECT: IProviderInfo = {
   id: 'burnerconnect',
   name: 'Burner Connect',
-  logo: BurnerWalletLogo,
+  logo: new URL('../logos/burnerwallet.png', import.meta.url),
   type: 'web',
   check: 'isBurnerProvider',
 };
@@ -122,7 +95,7 @@ export const BURNERCONNECT: IProviderInfo = {
 export const UNILOGIN: IProviderInfo = {
   id: 'unilogin',
   name: 'UniLogin',
-  logo: UniLoginLogo,
+  logo: new URL('../logos/unilogin.svg', import.meta.url),
   check: 'isUniLogin',
   type: 'web',
 };
@@ -130,7 +103,7 @@ export const UNILOGIN: IProviderInfo = {
 export const MEWCONNECT: IProviderInfo = {
   id: 'mewconnect',
   name: 'MEW wallet',
-  logo: MEWwallet,
+  logo: new URL('../logos/mewwallet.png', import.meta.url),
   type: 'qrcode',
   check: 'isMEWconnect',
   package: {
@@ -141,7 +114,7 @@ export const MEWCONNECT: IProviderInfo = {
 export const DCENT: IProviderInfo = {
   id: 'dcentwallet',
   name: "D'CENT",
-  logo: DcentWalletLogo,
+  logo: new URL('../logos/dcentwallet.png', import.meta.url),
   type: 'hardware',
   check: 'isDcentWallet',
   package: {
@@ -152,7 +125,7 @@ export const DCENT: IProviderInfo = {
 export const BITSKI: IProviderInfo = {
   id: 'bitski',
   name: 'Bitski',
-  logo: BitskiLogo,
+  logo: new URL('../logos/bitski.svg', import.meta.url),
   type: 'web',
   check: 'isBitski',
   package: {

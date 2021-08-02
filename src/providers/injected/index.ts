@@ -1,34 +1,9 @@
 import { IProviderInfo } from '../../helpers';
 
-// @ts-ignore
-import Web3DefaultLogo from '../logos/web3-default.svg';
-// @ts-ignore
-import MetaMaskLogo from '../logos/metamask.svg';
-// @ts-ignore
-import SafeLogo from '../logos/safe.svg';
-// @ts-ignore
-import NiftyWalletLogo from '../logos/niftyWallet.png';
-// @ts-ignore
-import TrustLogo from '../logos/trust.svg';
-// @ts-ignore
-import DapperLogo from '../logos/dapper.png';
-// @ts-ignore
-import CoinbaseLogo from '../logos/coinbase.svg';
-// @ts-ignore
-import CipherLogo from '../logos/cipher.svg';
-// @ts-ignore
-import imTokenLogo from '../logos/imtoken.svg';
-// @ts-ignore
-import StatusLogo from '../logos/status.svg';
-// @ts-ignore
-import TokenaryLogo from '../logos/tokenary.png';
-// @ts-ignore
-import OperaLogo from '../logos/opera.svg';
-
 export const FALLBACK: IProviderInfo = {
   id: 'injected',
   name: 'Web3',
-  logo: Web3DefaultLogo,
+  logo: new URL('../logos/web3-default.svg', import.meta.url),
   type: 'injected',
   check: 'isWeb3',
 };
@@ -36,7 +11,7 @@ export const FALLBACK: IProviderInfo = {
 export const METAMASK: IProviderInfo = {
   id: 'injected',
   name: 'MetaMask',
-  logo: MetaMaskLogo,
+  logo: new URL('../logos/metamask.svg', import.meta.url),
   type: 'injected',
   check: 'isMetaMask',
 };
@@ -44,7 +19,7 @@ export const METAMASK: IProviderInfo = {
 export const SAFE: IProviderInfo = {
   id: 'injected',
   name: 'Safe',
-  logo: SafeLogo,
+  logo: new URL('../logos/safe.svg', import.meta.url),
   type: 'injected',
   check: 'isSafe',
 };
@@ -52,7 +27,7 @@ export const SAFE: IProviderInfo = {
 export const NIFTY: IProviderInfo = {
   id: 'injected',
   name: 'Nifty',
-  logo: NiftyWalletLogo,
+  logo: new URL('../logos/niftyWallet.png', import.meta.url),
   type: 'injected',
   check: 'isNiftyWallet',
 };
@@ -60,7 +35,7 @@ export const NIFTY: IProviderInfo = {
 export const DAPPER: IProviderInfo = {
   id: 'injected',
   name: 'Dapper',
-  logo: DapperLogo,
+  logo: new URL('../logos/dapper.png', import.meta.url),
   type: 'injected',
   check: 'isDapper',
 };
@@ -68,7 +43,7 @@ export const DAPPER: IProviderInfo = {
 export const OPERA: IProviderInfo = {
   id: 'injected',
   name: 'Opera',
-  logo: OperaLogo,
+  logo: new URL('../logos/opera.svg', import.meta.url),
   type: 'injected',
   check: 'isOpera',
 };
@@ -76,7 +51,7 @@ export const OPERA: IProviderInfo = {
 export const TRUST: IProviderInfo = {
   id: 'injected',
   name: 'Trust',
-  logo: TrustLogo,
+  logo: new URL('../logos/trust.svg', import.meta.url),
   type: 'injected',
   check: 'isTrust',
 };
@@ -84,7 +59,7 @@ export const TRUST: IProviderInfo = {
 export const COINBASE: IProviderInfo = {
   id: 'injected',
   name: 'Coinbase',
-  logo: CoinbaseLogo,
+  logo: new URL('../logos/coinbase.svg', import.meta.url),
   type: 'injected',
   check: 'isToshi',
 };
@@ -92,7 +67,7 @@ export const COINBASE: IProviderInfo = {
 export const CIPHER: IProviderInfo = {
   id: 'injected',
   name: 'Cipher',
-  logo: CipherLogo,
+  logo: new URL('../logos/cipher.svg', import.meta.url),
   type: 'injected',
   check: 'isCipher',
 };
@@ -100,7 +75,7 @@ export const CIPHER: IProviderInfo = {
 export const IMTOKEN: IProviderInfo = {
   id: 'injected',
   name: 'imToken',
-  logo: imTokenLogo,
+  logo: new URL('../logos/imtoken.svg', import.meta.url),
   type: 'injected',
   check: 'isImToken',
 };
@@ -108,7 +83,7 @@ export const IMTOKEN: IProviderInfo = {
 export const STATUS: IProviderInfo = {
   id: 'injected',
   name: 'Status',
-  logo: StatusLogo,
+  logo: new URL('../logos/status.svg', import.meta.url),
   type: 'injected',
   check: 'isStatus',
 };
@@ -116,7 +91,7 @@ export const STATUS: IProviderInfo = {
 export const TOKENARY: IProviderInfo = {
   id: 'injected',
   name: 'Tokenary',
-  logo: TokenaryLogo,
+  logo: new URL('../logos/tokenary.png', import.meta.url),
   type: 'injected',
   check: 'isTokenary',
 };
