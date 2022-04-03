@@ -1,11 +1,11 @@
 {
-  "name": "@mindsorg/web3modal-ts",
+  "name": "@ofumbi/web3modal-ts",
   "version": "1.3.0",
   "description": "Web3modal's provider layer abstraction for simple implementation of web3 wallet connections",
-  "homepage": "https://gitlab.com/minds/web3modal-ts",
+  "homepage": "https://github.com/envatic/web3modal-ts",
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/minds/web3modal-ts.git"
+    "url": "git+https://github.com/envatic/web3modal-ts.git"
   },
   "keywords": [
     "web3",
@@ -23,7 +23,7 @@
     "walletlink",
     "web3modal-ts"
   ],
-  "author": "Minds & dOrg",
+  "author": "Ofumbi Stephen",
   "license": "MIT",
   "scripts": {
     "copy:logos": "copyfiles -u 3 ./src/providers/logos/** ./dist/providers/logos",
