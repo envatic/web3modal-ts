@@ -7,19 +7,21 @@ Fork of https://github.com/Web3Modal/web3modal, without any React or visual comp
 Web3Modal is a very useful and easy to use library, that allows developers to add support for multiple providers in their apps with a simple customizable configuration. 
 
 However, the original package uses React and its bundled vanilla JS version also has React bundled with it. Therefore, separating the typescript core from the React data providers and visual components is particularly useful, not only to allow full customization of the UI, but can also serve as a starting point for implementations in other frameworks like Angular and VueJS.
+## See
+https://github.com/envatic/vue3web3modal
 
 ## Usage
 
 1. Install Web3Modal-TS NPM package
 
 ```bash
-npm install --save @mindsorg/web3modal-ts
+npm install --save @envatic/web3modal-ts
 ```
 
 Or
 
 ```bash
-yarn add @mindsorg/web3modal-ts
+yarn add @envatic/web3modal-ts
 ```
 
 2. Instantiate a `Web3WalletConnector` object
