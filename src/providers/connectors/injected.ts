@@ -1,16 +1,18 @@
 const ConnectToInjected = async () => {
   let provider = null;
-  if ((window as any).ethereum) {
-    provider = (window as any).ethereum;
+  if (typeof window.ethereum !== 'undefined') {
+    provider = window.ethereum;
     try {
-      await (window as any).ethereum.request({ method: 'eth_requestAccounts' }) 
+      await provider.request({ method: 'eth_requestAccounts' })
     } catch (error) {
-      throw new Error('User Rejected');
+      throw new Error("User Rejected");
     }
-  } else if ((window as any).web3) {
-    provider = (window as any).web3.currentProvider;
+  } else if (window.web3) {
+    provider = window.web3.currentProvider;
+  } else if (window.celo) {
+    provider = window.celo;
   } else {
-    throw new Error('No Web3 Provider found');
+    throw new Error("No Web3 Provider found");
   }
   return provider;
 };
