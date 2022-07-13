@@ -10,14 +10,14 @@ const ConnectToSequence = async (
   opts?: ISequenceConnectorOptions
 ) => {
   let provider;
-  if (window?.ethereum?.isSequence) {
-    provider = window.ethereum;
-    try {
-      await provider.request({ method: 'eth_requestAccounts' })
-      return provider;
-    } catch (error) {
-      throw new Error("User Rejected");
-    }
+  if ((window as any)?.ethereum?.isSequence) {
+		provider = (window as any).ethereum;
+		try {
+			await provider.request({ method: "eth_requestAccounts" });
+			return provider;
+		} catch (error) {
+			throw new Error("User Rejected");
+		}
   }
 
   const wallet = new sequence.Wallet(opts?.defaultNetwork || 'mainnet');

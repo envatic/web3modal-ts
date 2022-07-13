@@ -1,33 +1,32 @@
 // @ts-ignore
-import WalletConnectLogo from "../logos/walletconnect-circle.svg";
+import WalletConnectLogo from "../logos/walletconnect-circle.svg?url";
 // @ts-ignore
-import PortisLogo from "../logos/portis.svg";
+import PortisLogo from "../logos/portis.svg?url";
 // @ts-ignore
-import FortmaticLogo from "../logos/fortmatic.svg";
+import FortmaticLogo from "../logos/fortmatic.svg?url";
 // @ts-ignore
-import VenlyLogo from "../logos/venly.svg";
+import VenlyLogo from "../logos/venly.svg?url";
 // @ts-ignore
-import TorusLogo from "../logos/torus.svg";
+import TorusLogo from "../logos/torus.svg?url";
 // @ts-ignore
-import AuthereumLogo from "../logos/authereum.svg";
+import AuthereumLogo from "../logos/authereum.svg?url";
 // @ts-ignore
-import BurnerWalletLogo from "../logos/burnerwallet.png";
+import BurnerWalletLogo from "../logos/burnerwallet.png?url";
 // @ts-ignore
-import MEWwallet from "../logos/mewwallet.png";
+import MEWwallet from "../logos/mewwallet.png?url";
 // @ts-ignore
-import DcentWalletLogo from "../logos/dcentwallet.png";
+import DcentWalletLogo from "../logos/dcentwallet.png?url";
 // @ts-ignore
-import BitskiLogo from "../logos/bitski.svg";
+import BitskiLogo from "../logos/bitski.svg?url";
 // @ts-ignore
-import FrameLogo from "../logos/frame.svg";
+import FrameLogo from "../logos/frame.svg?url";
 // @ts-ignore
-import BinanceChainWalletLogo from "../logos/binancechainwallet.svg";
+import BinanceChainWalletLogo from "../logos/binancechainwallet.svg?url";
 // @ts-ignore
-import CoinbaseWalletLogo from "../logos/coinbasewallet.svg";
+import CoinbaseWalletLogo from "../logos/coinbasewallet.svg?url";
 // @ts-ignore
-import WalletLinkLogo from "../logos/walletlink.svg";
 // @ts-ignore
-import SequenceLogo from "../logos/sequence.svg";
+import SequenceLogo from "../logos/sequence.svg?url";
 
 import { IProviderInfo } from "../../helpers";
 
