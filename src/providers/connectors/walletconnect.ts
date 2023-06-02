@@ -20,7 +20,7 @@ const ConnectToWalletConnect = (
       projectId = typeof opts.projectId !== "undefined" ? opts.projectId : projectId;
       showQrModal = opts.showQrModal || showQrModal;
     }
-    const provider = new WalletConnectProvider.init({
+    const provider = WalletConnectProvider.init({
 		projectId,
 		chains,
 		showQrModal,
