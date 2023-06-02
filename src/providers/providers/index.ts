@@ -33,14 +33,14 @@ import { IProviderInfo } from "../../helpers";
 export * from "../injected";
 
 export const WALLETCONNECT: IProviderInfo = {
-  id: "walletconnect",
-  name: "WalletConnect",
-  logo: WalletConnectLogo,
-  type: "qrcode",
-  check: "isWalletConnect",
-  package: {
-    required: [["infuraId", "rpc"]]
-  }
+	id: "walletconnect",
+	name: "WalletConnect",
+	logo: WalletConnectLogo,
+	type: "qrcode",
+	check: "isWalletConnect",
+	package: {
+		required: [["projectId", "chains"]],
+	},
 };
 
 export const PORTIS: IProviderInfo = {
