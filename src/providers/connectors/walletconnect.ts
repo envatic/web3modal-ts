@@ -1,12 +1,9 @@
-import { IAbstractConnectorOptions, getChainId } from "../../helpers";
+import { IAbstractConnectorOptions } from "../../helpers";
 
-export interface IWalletConnectConnectorOptions
-  extends IAbstractConnectorOptions {
-  infuraId?: string;
-  rpc?: { [chainId: number]: string };
-  bridge?: string;
-  qrcode?: boolean;
-  qrcodeModalOptions?: { mobileLinks?: string[] };
+export interface IWalletConnectConnectorOptions extends IAbstractConnectorOptions {
+	showQrModal?: boolean;
+	projectId?: string;
+	chains?: number[];
 }
 
 const ConnectToWalletConnect = (
@@ -14,31 +11,20 @@ const ConnectToWalletConnect = (
   opts: IWalletConnectConnectorOptions
 ) => {
   return new Promise(async (resolve, reject) => {
-    let bridge = "https://bridge.walletconnect.org";
-    let qrcode = true;
-    let infuraId = "";
-    let rpc = undefined;
-    let chainId = 1;
-    let qrcodeModalOptions = undefined;
+    let showQrModal = true;
+    let projectId = "";
+    let chains = [1];
 
     if (opts) {
-      bridge = opts.bridge || bridge;
-      qrcode = typeof opts.qrcode !== "undefined" ? opts.qrcode : qrcode;
-      infuraId = opts.infuraId || "";
-      rpc = opts.rpc || undefined;
-      chainId =
-        opts.network && getChainId(opts.network) ? getChainId(opts.network) : 1;
-      qrcodeModalOptions = opts.qrcodeModalOptions || undefined;
+      chains = opts.chains || chains;
+      projectId = typeof opts.projectId !== "undefined" ? opts.projectId : projectId;
+      showQrModal = opts.showQrModal || showQrModal;
     }
-
-    const provider = new WalletConnectProvider({
-      bridge,
-      qrcode,
-      infuraId,
-      rpc,
-      chainId,
-      qrcodeModalOptions
-    });
+    const provider = new WalletConnectProvider.init({
+		projectId,
+		chains,
+		showQrModal,
+	});
     try {
       await provider.enable();
       resolve(provider);

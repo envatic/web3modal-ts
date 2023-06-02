@@ -1,57 +1,57 @@
 import { IProviderInfo } from "../../helpers";
 
 // @ts-ignore
-import Web3DefaultLogo from "../logos/web3-default.svg";
+import Web3DefaultLogo from "../logos/web3-default.svg?url";
 // @ts-ignore
-import MetaMaskLogo from "../logos/metamask.svg";
+import MetaMaskLogo from "../logos/metamask.svg?url";
 // @ts-ignore
-import SafeLogo from "../logos/safe.svg";
+import SafeLogo from "../logos/safe.svg?url";
 // @ts-ignore
 import NiftyWalletLogo from "../logos/niftyWallet.png";
 // @ts-ignore
-import TrustLogo from "../logos/trust.svg";
+import TrustLogo from "../logos/trust.svg?url";
 // @ts-ignore
 import DapperLogo from "../logos/dapper.png";
 // @ts-ignore
-import CoinbaseLogo from "../logos/coinbase.svg";
+import CoinbaseLogo from "../logos/coinbase.svg?url";
 // @ts-ignore
-import CipherLogo from "../logos/cipher.svg";
+import CipherLogo from "../logos/cipher.svg?url";
 // @ts-ignore
-import imTokenLogo from "../logos/imtoken.svg";
+import imTokenLogo from "../logos/imtoken.svg?url";
 // @ts-ignore
-import StatusLogo from "../logos/status.svg";
+import StatusLogo from "../logos/status.svg?url";
 // @ts-ignore
 import TokenaryLogo from "../logos/tokenary.png";
 // @ts-ignore
-import OperaLogo from "../logos/opera.svg";
+import OperaLogo from "../logos/opera.svg?url";
 // @ts-ignore
-import FrameLogo from "../logos/frame.svg";
+import FrameLogo from "../logos/frame.svg?url";
 // @ts-ignore
 import LiqualityLogo from "../logos/liquality.png";
 // @ts-ignore
-import BoltXLogo from "../logos/boltx.svg";
+import BoltXLogo from "../logos/boltx.svg?url";
 // @ts-ignore
 import MathWalletLogo from "../logos/mathwallet.png";
 // @ts-ignore
-import RWalletLogo from "../logos/rwallet.svg";
+import RWalletLogo from "../logos/rwallet.svg?url";
 // @ts-ignore
-import BitpieLogo from "../logos/bitpie.svg";
+import BitpieLogo from "../logos/bitpie.svg?url";
 // @ts-ignore
-import XDEFILogo from "../logos/xdefi.svg";
+import XDEFILogo from "../logos/xdefi.svg?url";
 // @ts-ignore
-import CeloExtensionWalletLogo from "../logos/celoExtensionWallet.svg";
+import CeloExtensionWalletLogo from "../logos/celoExtensionWallet.svg?url";
 // @ts-ignore
-import BlockWalletLogo from "../logos/blockwallet.svg";
+import BlockWalletLogo from "../logos/blockwallet.svg?url";
 // @ts-ignore
-import TallyLogo from "../logos/tally.svg";
+import TallyLogo from "../logos/tally.svg?url";
 // @ts-ignore
-import PortalLogo from "../logos/portal.svg";
+import PortalLogo from "../logos/portal.svg?url";
 // @ts-ignore
-import SequenceLogo from "../logos/sequence.svg";
+import SequenceLogo from "../logos/sequence.svg?url";
 // @ts-ignore
-import BraveLogo from "../logos/brave.svg";
+import BraveLogo from "../logos/brave.svg?url";
 // @ts-ignore
-import RabbyLogo from "../logos/rabby.svg";
+import RabbyLogo from "../logos/rabby.svg?url";
 
 export const FALLBACK: IProviderInfo = {
   id: "injected",
