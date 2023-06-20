@@ -1,32 +1,11 @@
-import { IAbstractConnectorOptions } from "../../helpers";
-
-export interface IWalletConnectConnectorOptions extends IAbstractConnectorOptions {
-	showQrModal?: boolean;
-	projectId?: string;
-	chains?: number[];
-}
-
 const ConnectToWalletConnect = (
   WalletConnectProvider: any,
-  opts: IWalletConnectConnectorOptions
+  opts: any
 ) => {
   return new Promise(async (resolve, reject) => {
-    let showQrModal = true;
-    let projectId = "";
-    let chains = [1];
-
-    if (opts) {
-      chains = opts.chains || chains;
-      projectId = typeof opts.projectId !== "undefined" ? opts.projectId : projectId;
-      showQrModal = opts.showQrModal || showQrModal;
-    }
-    const provider = WalletConnectProvider.init({
-		projectId,
-		chains,
-		showQrModal,
-	});
+    const provider = WalletConnectProvider.init(opts);
     try {
-      await provider.enable();
+      await provider.connect();
       resolve(provider);
     } catch (e) {
       reject(e);

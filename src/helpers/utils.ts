@@ -1,13 +1,12 @@
 import * as env from 'detect-browser';
 
 import { CHAIN_DATA_LIST } from '../constants';
-import { providers, injected } from '../providers';
+import { injected, providers } from '../providers';
 import {
-  IProviderInfo,
-  IInjectedProvidersMap,
-  ChainData,
-  ThemeColors,
-  RequiredOption,
+    ChainData,
+    IInjectedProvidersMap,
+    IProviderInfo,
+    RequiredOption
 } from './types';
 
 export function checkInjectedProviders(): IInjectedProvidersMap {
@@ -40,15 +39,11 @@ export function checkInjectedProviders(): IInjectedProvidersMap {
 }
 
 export function verifyInjectedProvider(check: string): boolean {
-  return (window as any).ethereum
-    ? (window as any).ethereum[check] || ((window as any).web3 && (window as any).web3.currentProvider)
-      ? (window as any).web3
-        ? (window as any).web3.currentProvider[check]
-        : true
-      : false
-    : (window as any).web3 && (window as any).web3.currentProvider
-    ? (window as any).web3.currentProvider[check]
-    : false;
+    if ((window as any).ethereum)
+    return (window as any).ethereum[check];
+    if ((window as any)?.web3?.currentProvider)
+    return (window as any).web3.currentProvider[check];
+    return false;
 }
 
 export function getInjectedProvider(): IProviderInfo | null {
