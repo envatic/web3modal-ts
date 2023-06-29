@@ -7,9 +7,7 @@ const ConnectToInjected = async () => {
 		} catch (error) {
 			throw new Error("User Rejected");
 		}
-  } else if ((window as any).web3) {
-		provider = (window as any).web3.currentProvider;
-  } else if ((window as any).celo) {
+  }else if ((window as any).celo) {
 		provider = (window as any).celo;
   } else {
 		throw new Error("No Web3 Provider found");
